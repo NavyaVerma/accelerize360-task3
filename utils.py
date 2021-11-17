@@ -117,5 +117,5 @@ def endingBudget(budget, GroceryList):
     """
     print('Amount left', budget, ', you can buy:')
     for i in range(0, len(GroceryList)):
-        if GroceryList[i].price >= budget:
+        if budget >= GroceryList[i].price:
             printItem(GroceryList[i])
