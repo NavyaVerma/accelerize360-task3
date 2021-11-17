@@ -1,7 +1,6 @@
-# Task 3 - Groceries
-Maintaining Grocery list
+# Task 3 - Maintaining Groceries List
 
-Problem Statement:
+**Problem Statement:**
 
 Make a Grocery List for super market shopping with name, price and quantity; if the list already contains an item, then only update the price and quantity it should not append the item name again. Ask user his/her budget initially
 
