@@ -29,12 +29,15 @@ def addItem(budget):
     :return: Item, status [200, 406, 403], left budget
 
     """
-    origBudget = budget
+    orig_budget = budget
     name = input("Enter Product: ")
     quantity = input("Enter Quantity: ")
     price = int(input("Enter Price: "))
     status, budget = checkBudget(price, budget)
-    return Item(price, quantity, name), status, budget
+    if status == 200:
+        return Item(price, quantity, name), status, budget
+    else:
+        return Item(price, quantity, name), status, orig_budget
 
 
 def checkBudget(price, budget):
